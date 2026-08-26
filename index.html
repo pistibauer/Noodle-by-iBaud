@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noodle — Smart Calorie Tracker by iBaud</title>
+<meta name="description" content="Log meals in seconds by camera, voice or barcode. Noodle turns your day into one clear On-Track score — with Apple Health, weight and hydration built in. Private and on-device.">
+<meta property="og:title" content="Noodle — Smart Calorie Tracker">
+<meta property="og:description" content="Log meals in seconds. One score for your whole day. Private and on-device.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --ink:#1f2933; --muted:#52606d; --amber:#e8a33d; --amber-dk:#c9821c;
+    --green:#3db68c; --blue:#2f80ed; --line:#e4e7eb; --bg:#fff; --soft:#faf7f2;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; color:var(--ink); background:var(--bg);
+    font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px;}
+  a{color:var(--amber-dk);}
+
+  /* Hero */
+  header{
+    background:linear-gradient(140deg,#f7c468 0%,#d8801e 100%);
+    color:#fff; padding:64px 0 72px; text-align:center;
+  }
+  header img.icon{
+    width:104px;height:104px;border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.22); margin-bottom:20px;
+  }
+  header h1{font-size:44px;margin:0 0 6px;letter-spacing:-.5px;}
+  header p.tag{font-size:20px;margin:0 0 4px;opacity:.96;}
+  header p.by{font-size:15px;opacity:.85;margin:0 0 26px;}
+  .badge{
+    display:inline-block;background:rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.45); color:#fff;
+    padding:10px 20px;border-radius:999px;font-size:15px;font-weight:600;
+    backdrop-filter:blur(4px);
+  }
+
+  /* Sections */
+  section{padding:60px 0;}
+  section.soft{background:var(--soft);}
+  h2{font-size:28px;margin:0 0 10px;letter-spacing:-.3px;}
+  .lede{color:var(--muted);max-width:640px;margin:0 0 34px;}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;
+  }
+  .card h3{margin:0 0 6px;font-size:18px;}
+  .card p{margin:0;color:var(--muted);font-size:15px;}
+  .dot{
+    width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+    margin-bottom:12px;font-size:18px;
+  }
+  .a{background:#fdf1dd;} .g{background:#e4f6ee;} .b{background:#e6f0fd;}
+
+  /* Screens */
+  .shots{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:8px;}
+  .shots figure{margin:0;text-align:center;}
+  .shots img{
+    width:250px;border-radius:22px;border:1px solid var(--line);
+    box-shadow:0 12px 34px rgba(31,41,51,.13);
+  }
+  .shots figcaption{margin-top:12px;font-size:14px;color:var(--muted);}
+
+  /* Privacy strip */
+  .privacy{
+    background:var(--ink);color:#fff;border-radius:18px;padding:30px 28px;
+  }
+  .privacy h2{color:#fff;}
+  .privacy p{color:#cbd2d9;margin:0 0 16px;max-width:640px;}
+  .privacy ul{margin:0;padding-left:20px;color:#cbd2d9;}
+  .privacy li{margin:5px 0;}
+
+  footer{
+    border-top:1px solid var(--line);padding:30px 0 46px;
+    color:var(--muted);font-size:14px;text-align:center;
+  }
+  footer a{margin:0 10px;}
+  .disclaim{max-width:680px;margin:18px auto 0;font-size:13px;color:#8794a1;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="icon" src="site_assets/icon.png" alt="Noodle app icon">
+    <h1>Noodle</h1>
+    <p class="tag">Smart Calorie Tracker</p>
+    <p class="by">by iBaud</p>
+    <span class="badge">Coming soon to the App Store</span>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Logging shouldn't be a chore</h2>
+    <p class="lede">
+      Most calorie trackers fail for the same reason: typing every meal into a
+      search box is tedious, and after two weeks you quietly stop. Noodle is
+      built around one idea — logging should take seconds, and your day should
+      make sense at a glance.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="dot a">📷</div>
+        <h3>Scan your plate</h3>
+        <p>On-device AI recognises your food and suggests calories. Nothing is uploaded.</p>
+      </div>
+      <div class="card">
+        <div class="dot g">🎙️</div>
+        <h3>Just say it</h3>
+        <p>“A bowl of ramen with an egg” is understood, matched and logged.</p>
+      </div>
+      <div class="card">
+        <div class="dot b">📊</div>
+        <h3>Barcode &amp; search</h3>
+        <p>Exact nutrition for packaged food, plus 600,000+ foods from the USDA database.</p>
+      </div>
+      <div class="card">
+        <div class="dot a">🕘</div>
+        <h3>From history</h3>
+        <p>Most meals repeat. Re-log anything you've eaten before in two taps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>One number for your whole day</h2>
+    <p class="lede">
+      The On-Track ring folds calories eaten, calories burned and your target
+      into a single score — so you know where you stand without doing mental
+      arithmetic.
+    </p>
+    <div class="shots">
+      <figure>
+        <img src="site_assets/shot_today.png" alt="Noodle Today screen showing the On-Track ring">
+        <figcaption>Today · On-Track score</figcaption>
+      </figure>
+      <figure>
+        <img src="site_assets/shot_hydration.png" alt="Noodle daily hydration screen">
+        <figcaption>Daily hydration</figcaption>
+      </figure>
+      <figure>
+        <img src="site_assets/shot_trends.png" alt="Noodle trends charts">
+        <figcaption>Trends over time</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>More than calories</h2>
+    <p class="lede">Everything that actually moves the needle, in one app.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Real energy balance</h3>
+        <p>Reads workouts and daily movement from Apple Health, then folds them into your target.</p>
+      </div>
+      <div class="card">
+        <h3>Honest goals</h3>
+        <p>Set a goal weight and date — Noodle tells you if it's achievable at a healthy 1–2 lb per week, or suggests a realistic date.</p>
+      </div>
+      <div class="card">
+        <h3>Weight &amp; hydration</h3>
+        <p>Trend charts with goal lines, and a water target personalised to your body and activity.</p>
+      </div>
+      <div class="card">
+        <h3>Trends that make sense</h3>
+        <p>Week, month, quarter or year — calories, protein, carbs, activity by type and hydration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="privacy">
+      <h2>Privacy, properly</h2>
+      <p>
+        Your data stays on your iPhone. We don't have servers that hold your
+        health information, because we never collect it.
+      </p>
+      <ul>
+        <li>No account to create, and no sign-in</li>
+        <li>No ads, no analytics, no tracking</li>
+        <li>Food photos analysed on-device and never uploaded</li>
+        <li>Apple Health access is read-only and never used for advertising</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="support.html">Support</a> ·
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="mailto:istvanbauer@gmail.com">Contact</a>
+    <p class="disclaim">
+      Noodle is a general wellness and informational tool. It is not a medical
+      device and does not provide medical advice, diagnosis or treatment.
+      Calorie, nutrition, hydration and weight figures — including AI estimates
+      — are approximate. Please consult a qualified healthcare professional
+      before making decisions about your diet, exercise or health.
+    </p>
+    <p>© 2026 iBaud. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
